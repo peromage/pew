@@ -36,8 +36,8 @@ in {
   options.rice.desktops = options;
 
   config = mkIf enableDesktopConfig {
-    services.xserver = {
-      enable = true;
+    services = {
+      xserver.enable = true;
       libinput.enable = true;
     };
 
